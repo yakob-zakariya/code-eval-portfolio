@@ -23,6 +23,7 @@ docker run --rm code-eval
 | # | Task | Verdict | Rating |
 | --- | --- | --- | --- |
 | [001](evals/eval_001_longest_substring/evaluation.md) | Longest Substring Without Repeating Characters | Incorrect — `left` moves backward | 3/7 |
+| [002](evals/eval_002_three_sum/evaluation.md) | 3Sum | Correct — sort + two pointers, duplicates skipped | 7/7 |
 
 ## Folder layout per evaluation
 
@@ -30,7 +31,7 @@ docker run --rm code-eval
 evals/eval_NNN_name/
 ├── task.md             # the problem
 ├── model_solution.py   # AI output, unedited
-├── fixed_solution.py   # smallest correct change
+├── fixed_solution.py   # smallest correct change (only if the verdict is Incorrect)
 ├── test_solution.py    # tests that prove the verdict
 └── evaluation.md       # verdict, failing input, root cause, fix, rating
 ```
